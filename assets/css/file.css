@@ -305,7 +305,7 @@ height: 10px;
 	background-color:green;
 	position: absolute;
 	z-index: 1;
-	top:440px;
+	top:360px;
 	margin:5px 20px 10px 20px;
 }
 
@@ -317,8 +317,8 @@ height: 10px;
 	background-color:green;
 	position: absolute;
 	z-index: 1;
-	top:440px;
-	left:313px;
+	top:360px;
+	left:314px;
 	margin:5px 20px 10px 20px;
 }
 
@@ -330,7 +330,7 @@ height: 10px;
 	background-color:green;
 	position: absolute;
 	z-index: 1;
-	top:635px;
+	top:555px;
 	margin:5px 20px 10px 20px;
 }
 
@@ -342,7 +342,7 @@ height: 10px;
 	background-color:green;
 	position: absolute;
 	z-index: 1;
-	top:635px;
+	top:555px;
 	left:313px;
 	margin:5px 20px 10px 20px;
 }
@@ -355,9 +355,15 @@ height: 10px;
 	background-color:green;
 	position: absolute;
 	z-index: 1;
-	top:820px;
+	top:725px;
 	margin:5px 20px 10px 20px;
 }
+
+
+
+
+/*Beginning of media screening section*/
+
 
 @media screen and (max-width: 640px) {
 
@@ -924,3 +930,5 @@ h2{
 	margin-right:0px;
 }
 }
+
+
