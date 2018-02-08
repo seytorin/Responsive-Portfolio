@@ -44,10 +44,20 @@
 
 </nav>
 
-<ul id="errors" class="">
-        <li id="info">There were some problems with your form submission:</li>
+<ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+    <li id="info">There were some problems with your form submission:</li>
+    <?php 
+    if(isset($cf['errors']) && count($cf['errors']) > 0) :
+        foreach($cf['errors'] as $error) :
+    ?>
+    <li><?php echo $error ?></li>
+    <?php
+        endforeach;
+    endif;
+    ?>
 </ul>
-<p id="success"><br>Thanks for your message! I will get back to you as soon as possible!</p>
+<p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message!</p>
+
 
 <div id="contact">
 
@@ -137,5 +147,5 @@ if(isset($_SESSION['cf_returndata'])){
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-        
+
 </body>
